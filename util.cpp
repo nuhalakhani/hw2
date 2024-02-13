@@ -17,14 +17,15 @@ std::set<std::string> parseStringToWords(string rawWords)
 {
 
   set<string> wordSet;
-  istringstream parseSet(rawWords);
-  string word;
 
   for(unsigned int i = 0; i < rawWords.size(); i++) {
     if(ispunct(rawWords[i])) {
       rawWords[i] = ' ';
     }
   }
+
+  istringstream parseSet(rawWords);
+  string word;
 
   while(parseSet >> word) {
     if(word.size() > 1) {

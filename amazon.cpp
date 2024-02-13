@@ -172,7 +172,7 @@ int main(int argc, char* argv[])
                     it = currCart.erase(it);
                   }
                   else {
-                    it += 1;
+                    it++;
                   }
                 }
                 cartMap[user] = currCart;
